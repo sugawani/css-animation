@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        .stick {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background: #000;
+            transition: all 300ms 0s ease;
+            border-radius: 0px 50px 50px 0px;
+            /* animation-name: parrot; */
+        }
+
+        .stick:hover {
+            position: relative;
+            background: #ccc;
+            width: 1000px;
+            border-radius: 0px 50px 50px 0px;
+            animation-name: parrot;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes parrot {
+            0% {
+                background-color: red;
+            }
+            10% {
+                background-color: yellow;
+            }
+            20% {
+                background-color: green;
+            }
+            30% {
+                background-color: blue;
+            }
+            40% {
+                background-color: violet;
+            }
+            50% {
+                background-color: red;
+            }
+            60% {
+                background-color: yellow;
+            }
+            70% {
+                background-color: green;
+            }
+            80% {
+                background-color: blue;
+            }
+            90% {
+                background-color: violet;
+            }
+            100% {
+                background-color: black;
+            }
+        }
+
+        .ball1 {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            border-radius: 100px;
+            background:yellow;
+        }
+
+        .ball2 {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            border-radius: 100px;
+            background:yellow;
+        }
+
+        .penis {
+            position: relative;
+        }
+    </style>
+<head></head>
+<body>
+    <div class="penis">
+        <div class="ball1"></div>
+        <div class="stick"></div>
+        <div class="ball2"></div>
+    </div>
+</body>
+</html>
