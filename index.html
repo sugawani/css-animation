@@ -75,7 +75,71 @@
 
         .tintin {
             position: relative;
+            margin: 30px;
         }
+
+        .wani {
+            margin: 30px;
+        }
+
+        .head {
+            background: green;
+            width: 150px;
+            height: 60px;
+            border-radius: 30% 30% 30% 30%;
+            position: relative;
+        }
+
+        .eye-outer {
+            background: white;
+            left: 3px;
+            width: 15px;
+            height: 18px;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        .eye {
+            background: green;
+            width: 20px;
+            height: 30px;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        .eye.left {
+            right: 40px;
+            top: -15px;
+        }
+
+        .eye.right {
+            right: 20px;
+            top: -15px;
+        }
+
+        .iris {
+            background: black;
+            width: 10px;
+            height: 15px;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        .pupil {
+            background: white;
+            width:5px;
+            height: 5px;
+            border-radius: 50%;
+        }
+
+        .mouse {
+            position: absolute;
+            top: 5px;
+            border-style: solid;
+            border-width: 30px 0 15px 70px;
+            border-color: transparent transparent transparent white;
+        }
+
     </style>
 <head></head>
 <body>
@@ -83,6 +147,25 @@
         <div class="ball1"></div>
         <div class="stick" ontouchstart=""></div>
         <div class="ball2"></div>
+    </div>
+    <div class="wani">
+        <div class="head">
+            <div class="eye left">
+                <div class="eye-outer">
+                    <div class="iris">
+                        <div class="pupil"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="eye right">
+                <div class="eye-outer">
+                    <div class="iris">
+                        <div class="pupil"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="mouse"></div>
+        </div>
     </div>
 </body>
 </html>
